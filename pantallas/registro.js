@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Boton from "/prueba/componentes/boton";
 import Input from "/prueba/componentes/input";
 
-const registro =  () => {
+export default function Registro ({navigation}){
   return (
     <View style={styles.container}>
         <View style={styles.caja}>
@@ -51,4 +51,3 @@ const styles = StyleSheet.create({
   
 });
 
-export default registro;

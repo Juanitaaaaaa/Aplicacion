@@ -33,8 +33,6 @@ function Tabs (){
         </Tab.Navigator>
     )
 }
-
-
 export default function navigation(){
     return(
         <NavigationContainer>

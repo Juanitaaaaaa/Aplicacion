@@ -3,8 +3,8 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Boton from "/prueba/componentes/boton";
 import Input from "/prueba/componentes/input";
 
-const login =  () => {
-  return(
+export default function Login ({navigation}){ 
+  return( 
     
     <View style={styles.container}>
         <View style={styles.formulario}>
@@ -23,7 +23,7 @@ const login =  () => {
             </Pressable>
             <Text>{'\n'}</Text>
             <Text style={styles.cuenta}>¿No tienes una cuenta?</Text>
-            <Pressable>
+            <Pressable onPress={() => navigation.navigate('Registro')}>
               <Text style={styles.registro}>Registrate aqui</Text>
             </Pressable>
           </View>
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 });
 
 
-export default login;
+
 
 
 
